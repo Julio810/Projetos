@@ -21,12 +21,12 @@ header > p{
 
 body{
     text-align: center;
-    background-color: bisque;
+    background-color: rgba(255, 255, 255, 0.664);
 }
 
 nav{
     background-color: #063d1e;
-    padding: 10px;
+    padding: 15px;
     box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.418);
     border-radius: 5px;
     
@@ -38,7 +38,7 @@ nav > a{
     text-align: left;
     font-weight: bolder;
     border-radius: 5px;
-    padding: 10px;
+    padding: 15px;
 }
 
 nav > a:hover{
@@ -70,14 +70,42 @@ div#acessorios > img{
     height: 200px;
 }
 
-section#a > ul > li{
-    margin: auto;
-    columns: 3;
+.opiniao{
+    width: 30%;
+    padding: 5px;
+    display: inline-block;
+    justify-content: space-around;
+    
+}
+
+section.opiniao > h3{
+    text-align: center;
 }
 
 
+.container {
+    display: flex;
+    justify-content: space-between; /* Para espaçar os itens igualmente */
+    background-color: #FFE4C4; /* Cor de fundo */
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.664);
+}
+
+.section {
+    width: 33%;
+    padding: 3px;
+}
+
+.section > h3 {
+    text-align: center; /* Centraliza os títulos */
+}
+
+.section > p {
+    text-align: justify; /* Justifica o texto */
+}
 
 footer{
     background-color: rgb(184, 169, 169);
-    height: 50px;
+    height: 70px;
+    border-radius: 5px;
 }
