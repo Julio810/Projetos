@@ -1,9 +1,14 @@
 @charset "UTF-8";
 
+*{
+    margin: 0px;
+}
+
 header{
+    text-align: left;
     background-color: rgba(10, 63, 10, 0.719);
     border-radius: 5px;
-    height: 122px;
+    height: 110px;
 }
 
 header > h1{
@@ -15,6 +20,7 @@ header > p{
 }
 
 body{
+    text-align: center;
     background-color: bisque;
 }
 
@@ -22,6 +28,8 @@ nav{
     background-color: #063d1e;
     padding: 10px;
     box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.418);
+    border-radius: 5px;
+    
 }
 
 nav > a{
@@ -42,26 +50,32 @@ nav > a:hover{
 div > img#texto1{
     width: 650px;
     height: 420px;
+    padding: 9px;
 }
 
 div > img#texto2{
     width: 650px;
     height: 420px;
-    float: right;
+    margin: auto;
+    padding: 9px;
 }
 
-div > img#imagem01{
-    padding: 5px;
+div#imagem > img{
+    padding: 9px;
     height: 260px;
+    margin: auto;
 }
 
-div > img#imagem02{
-    padding: 5px;
-    height: 260px;
+div#acessorios > img{
+    height: 200px;
 }
 
-div > img#imagem03{
-    padding: 5px;
-    height: 260px;
-    width: auto;
+section#a > ul > li{
+    margin: auto;
+    columns: 3;
+}
+
+footer{
+    background-color: rgb(184, 169, 169);
+    height: 50px;
 }
