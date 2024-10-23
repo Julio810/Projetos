@@ -1,15 +1,113 @@
 @charset "UTF-8";
 
-body{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+*{
     margin: 0px;
-    padding: 5px;
-    /*background-color: rgb(35, 109, 109);*/
+    padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body, html{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    overflow-x: hidden;
+    /*background: url(../imagens/pexels-cottonbro-5095942.jpg) no-repeat center top;*/
+}
+
+body{
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 header{
+    padding: 9px;
     text-align: center;
-    background-color: aqua;
+    background-color: chocolate;
+    background-image: linear-gradient(to left, chocolate, rgba(255, 255, 0, 0.459));
+}
+
+nav{
+    padding: 20px;
+    box-shadow: 0px 5px 7px;
+    border-radius: 7px;
+    background: url(../imagens/pexels-cottonbro-5095942.jpg) no-repeat;
+    background-size: cover;
+}
+
+nav > a{
     padding: 10px;
+    width: 5px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+nav > a:hover{
+    background-color: chocolate;
+    color: yellow;
+    padding: 17px;
+    height: 100%;
     border-radius: 5px;
+    width: 5px;
+}
+
+nav > a > img{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 50%;
+    float: right;
+}
+
+main > article{
+    padding: 10px;
+    background-color: whitesmoke;
+}
+
+main > article > p{
+    color: black;
+    text-align: justify;
+    padding: 10px;
+    height: 150px;
+    font-size: 1.1em;
+    max-width: 830px;
+}
+
+main > article > img{
+    float: left;
+    margin-right: 13px;
+    width: 160px;
+    height: 160px;
+}
+
+section{
+    height: 30px;
+}
+
+section > h2{
+    text-align: center;
+    /*color: whitesmoke;*/
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.664);
+}
+
+section > div.variedades{
+    display: flex;
+    justify-content: space-between; /* Para espaçar os itens igualmente */
+    /*background-color: #FFE4C4; /* Cor de fundo */
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.664);
+}
+
+section > div.variedades > div.conteudo{
+    text-align: justify;
+    padding: 7px;
+}
+
+section > div.variedades > div.conteudo > a{
+    color: black;
+    text-decoration: none;
+}
+
+section > div.variedades > div.conteudo > a > p{
+    max-width: 500px;
 }
