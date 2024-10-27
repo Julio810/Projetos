@@ -6,6 +6,37 @@
         flex-direction: column;
         align-items: center;
     }
+    span#burguer{
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        cursor: pointer;
+    }
+    menu{
+        display: block;
+    }
+    menu > ul{
+        list-style-type: none;
+    }
+    menu > ul > li{
+        display: inline-block;
+    }
+    menu > ul > li > a{
+        display: block;
+        padding: 10px;
+        height: 25px;
+        width: 96vw;
+        text-decoration: none;
+        text-align: center;
+        background-color: rgb(87, 87, 87);
+        color: white;
+        border-top: 3px solid black;
+        border-radius: 10px;
+    }
+    main{
+        max-width: 768px;
+    }
 }
 
 *{
@@ -46,22 +77,67 @@ header > p{
     font-size: 1.2em;
 }
 
-nav{
-    padding: 20px;
+ span#burguer{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+}
+
+span#burguer:hover{
+    background-color: white;
+    color: black;
+}
+
+menu{
+    display: block;
+}
+
+menu{
+    padding: 10px;
+    width: 100%;
     box-shadow: 0px 5px 7px;
     border-radius: 7px;
     background: url(../imagens/pexels-cottonbro-5095942.jpg) no-repeat;
     background-size: cover;
 }
 
-nav > a{
+menu > ul{
+    list-style-type: none;
+}
+
+menu > ul > li > a{
+    display: block;
+    padding: 10px;
+    height: 25px;
+    width: 96vw;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(87, 87, 87);
+    color: white;
+    border-top: 3px solid black;
+    border-radius: 10px;
+}
+
+menu > ul > li > a:hover{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(87, 87, 87);
+    color: chocolate;
+    border-top: 2px solid black;
+}
+
+ul > a{
     padding: 10px;
     width: 5px;
     text-decoration: none;
     color: aliceblue;
 }
 
-nav > a:hover{
+ul > a:hover{
     background-color: chocolate;
     transition-duration: 0.5s;
     color: yellow;
@@ -70,6 +146,15 @@ nav > a:hover{
     border-radius: 5px;
     width: 5px;
 }
+
+/*main{
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}*/
 
 main > article{
     padding: 10px;
@@ -80,10 +165,10 @@ main > article > div.container{
     display: flex;
 }
 
-/*main > article > div.container > a{
+main > article > div.container > a{
     padding: 10px;
     margin-bottom: 20px;
-}*/
+}
 
 main > article > div.container > p{
     color: black;

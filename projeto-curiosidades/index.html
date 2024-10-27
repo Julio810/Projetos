@@ -4,23 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curiosidades Diversas</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <link rel="stylesheet" href="estilo/style.css">
-    <link rel="stylesheet" href="media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho">
     <header>
         <h1>Curiosidades Diversas</h1>
-        <p>Venha explorar um site onde o conhecimento é ilimitado, aqui você vai encontrar as mais diversas curiosidades.</p>
+        <p>Venha explorar um site onde o conhecimento é ilimitado, aqui você vai encontrar as mais diversas curiosidades.</p><br>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
     </header>
-    <nav>
-            <a href="">Ciências</a>
-            <a href="">Times de Futebol</a>
-            <a href="">Vida Animal</a>
-            <a href="">Países</a>
-            <a href="">Estatísticas</a>
-            <a href="">Turismo</a>
-            <a href="">Política</a>
-    </nav>
+    <menu id="itens">
+        <ul>
+            <li><a href="">Ciências</a></li>
+            <li><a href="">Times de Futebol</a></li>
+            <li><a href="">Vida Animal</a></li>
+            <li><a href="">Países</a></li>
+            <li><a href="">Estatísticas</a></li>
+            <li><a href="">Turismo</a></li>
+            <li><a href="">Política</a></li>
+        </ul>
+    </menu>
     <main>
         <article>
             <h2>Mais acessados</h2> <br>
@@ -38,7 +41,7 @@
 
             <div class="container">
                 <img src="imagens/pexels-pixabay-51003.jpg" alt="">
-                <strong>Vida Animal</strong> <br>
+                <strong>Vida Animal</strong> 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid natus quis corporis, veniam, cum minima expedita magni unde ex quia voluptas laborum sit praesentium? Voluptatibus molestiae quam quidem inventore repellat! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti sed quam quia vitae exercitationem, ex laudantium. Quod, voluptatum nisi illo iusto minus eligendi cumque ipsum temporibus voluptates reiciendis vel eaque.</p>
             </div>
 
@@ -48,6 +51,23 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum modi architecto dolorem a reprehenderit, qui laudantium impedit distinctio cum adipisci nostrum, temporibus perferendis, sapiente dolore possimus quaerat. Excepturi, reiciendis nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, ea! Nesciunt facere explicabo dolor, incidunt ducimus necessitatibus deserunt totam placeat fugiat, iste recusandae maxime ipsum distinctio amet, impedit commodi nostrum!</p>
             </div>
         </article>
+        <script>
+            function clickMenu(){
+                if (itens.style.display == 'block'){
+                    itens.style.display = 'none'
+                } else {
+                    itens.style.display = 'block'
+                }
+            }
+
+            function mudouTamanho(){
+                if(window.innerWidth >= 768){
+                    itens.style.display = 'block'
+                } else {
+                    itens.style.display = 'none'
+                }
+            }
+        </script>
     </main>
     <section>
         <h2>Outros Tópicos</h2>
