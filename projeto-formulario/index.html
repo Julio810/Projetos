@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Cadastro de Usuário</legend>
+            <p>
+                <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome Completo" autocomplete="none">
+            </p>
+            <p>
+                <input type="email" name="email" id="iemail" required placeholder="E-mail" autocomplete="none">
+            </p>
+            <p> 
+                <input type="tel" name="tel" id="itel" autocomplete="tel" placeholder="Contato" pattern="^[0-9]{4, 5}-[0-9]{4}$">
+            </p>
+            <p>
+                <input type="radio" name="sexo" id="isxmas" value="M"><label for="isxmas">Masculino</label></input>
+                <input type="radio" name="sexo" id="isxfem" value="F"><label for="isxfem">Feminino</label></input>
+            </p>
+            <p>
+                <input type="date" name="nascimento" id="inas" value="2024-10-29">
+            </p>
+            <p>
+                <select name="estado" id="iest">
+                    <option value="" selected>---------- ESTADO ----------
+                    </option>
+                    <optgroup label="Região Nordeste">
+                        <option value="PE">Pernambuco</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="CE">Ceará</option>
+                        <option value="BA">Bahia</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="PI">Piauí</option>
+                    </optgroup>
+                    <optgroup label="Região Sul">
+                        <option value="PR">Paraná</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                    </optgroup>
+                    <optgroup label="Região Sudeste">
+                        <option value="MG">Minas Gerais</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <option value="" selected>PROFISSÃO</option>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option>Administrador</option>
+                    <option>Professor</option>
+                    <option>Desenvolvedor</option>
+                    <option>Contabilista</option>
+                    <option>Porteiro</option>
+                    <option>Merendeira</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="inivel">Satisfação com o Formulário: </label>
+                <input type="range" name="nivel" id="inivel" min="1" max="10" value="2">
+            </p>
+            <p>
+                <label for="ifoto">Foto do Perfil</label>
+                <input type="file" name="foto" id="ifoto" required>
+            </p>
+            <p>
+                <input type="password" name="senha" id="isenha" required minlength="8" maxlength="25" size="15" placeholder="Digite sua senha" autocomplete="current-password">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
