@@ -54,6 +54,7 @@ body, html{
 }
 
 body{
+    margin: auto;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -182,8 +183,13 @@ main > article > div.container > p{
 main > article > div.container > strong{
     font-size: 1.3em;
     width: 20px;
-    height: 10px;
-    margin-top: -10px;
+    height: 25px;
+    margin-top: -2.5px;
+}
+
+main > article > div.container > strong:hover{
+    color: chocolate;
+    cursor: pointer;
 }
 
 main > article > div.container > img{
@@ -225,4 +231,36 @@ section > div.variedades > div.conteudo > a{
 
 section > div.variedades > div.conteudo > a > p{
     max-width: 500px;
+    color: brown;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-image: linear-gradient(to right, chocolate, rgba(255, 255, 0, 0.459));
+    text-align: center;
+    padding: 10px;
+    z-index: 999;
+}
+
+footer > div.lorem-container{
+    padding: 10px;
+    height: 5px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer > div.lorem-container > p{
+    float: left;
+}
+
+footer > div.lorem-container > a > img{
+    float: right;
+    width: 30px;
+    margin: 8px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px black;
+    box-sizing: border-box;
 }
